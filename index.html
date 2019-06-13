@@ -19,16 +19,20 @@
     <button id="btnCounter">+</button>
 
     <script>
-            // Get the btn element
-            const element = document.querySelector("#btnCounter");
-            // console.log(element);
-    
-            // Listen to click event
-    
-            // Take a number which starts from zero
+        // Take a number which starts from zero
             let counter = 0;
+        // Function to increment the number
+            counterIncrement = () => {
             // Every click increment a number
-            counter = counter + 1;
-        </script>
+                counter = counter + 1;
+                console.log(counter);
+            }
+        // Get the btn element
+            const element = document.querySelector("#btnCounter");
+
+       // Listen to click event
+            element.addEventListener("click",counterIncrement,false);
+
+    </script>
 </body>
 </html>
